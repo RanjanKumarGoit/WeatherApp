@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.inputBtns{
+  display: flex;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .preDefinedLocation{
+      width: 80%;
+      font-weight: 100;
+      display: flex;
+      gap: 5%;
+      margin: auto;
+  }
+  .mainContainer{
+    width: 100%;
+    margin: auto;
+    padding: 10%;
+  }
+  .locationContainer{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+  }
+  .locationContainer input{
+    width: 90%;
+  }
+  .inputMainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .searchAndLocation{
+    /* gap: 20px !important; */
+  }
+  .unitContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.9rem;
+  }
+  .timeAndLocationContainer{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding: -28px  ;
+  }
+  .localTimeAndDate p{
+    font-size: 20px;
+  }
+  .timeSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+}
